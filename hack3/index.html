@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jQuery/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <div id="particles-js"></div>
+     <title>Happy Hack</title>
+</head>
+
+<header>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#access">Access</a></li>
+    </ul>
+</header>
+
+
+<body>
+    <section class="firstview" >
+        <div class="title">
+           <img src="images/logo.png" alt="">
+            <p>We are Web Designers.</p>
+        </div>
+
+        <script src="js/jquery.bgswitcher.js"></script>
+        <script>
+
+            jQuery(function($) {
+                $('.firstview').bgSwitcher({
+                    images: ['images/background1.jpg','images/background2.jpg','images/background3.jpg'],
+                    interval: 5000,
+                    loop: true,
+                    shuffle: true,
+                    effect: "fade",
+                    duration: 2000,
+                    easing: "swing"
+                });
+            });
+            </script>
+
+
+
+    </section>
+
+    <section class="intro" id="intro">
+      <h2>Introduction</h2>
+          
+        <div class="intro1">
+            <img src="images/introduction_001.jpg" alt="">
+            <div class="intro-one">
+                <p>
+                    Happy Hackはいまをときめく若者がITを活用したもの<br>
+                    づくりに取り組める環境を提供しています。<br>
+                    特に、Webデザイン領域のプログラミングを学習して<br>
+                    いる生徒が一番積極的に活動しています。<br>
+                    誰でも最初は初心者。それを一番知っている我々がプロ<br>
+                    グラミングへの第一歩を踏み出すお手伝いをさせていた<br>
+                    だきます。
+                </p>
+                <a href="">会員登録</a>
+            </div>
+            
+        </div>
+
+        <div class="intro2">
+            <div class="intro-two">
+                <p>Happy Hackでは「楽しさ」と「真剣さ」をモットー<br>
+                    にプログラミングを学びます。コースは全部で7つ準備<br>
+                    をしています。<br>
+                    WebデザインからWebサービス、3DゲームやiPhone<br>
+                    アプリまで幅広くお楽しみいただけます。<br>
+                    自分の想いをカタチにして発信することをぜひこの場で<br>
+                    体験してみてください。世界が変わって見えるかもしれ<br>
+                    ません。
+                </p>
+                <a href="">会員登録</a>
+            </div>
+            <img src="images/introduction_002.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section class="courses" id="courses">
+        <h2>Courses</h2>
+    
+        <div class="courses-intro">
+
+            <div class="course-intro">
+                <img src="images/html.png" alt="">
+                <p>HTMLコース</p>
+                 <div class="html">
+                    <a href="" >このコースを受ける</a>
+                 </div>
+            </div>
+
+            <div class="course-intro">
+                <img src="images/css.png" alt="">
+                <p>CSSコース</p>
+                    <div class="css">
+                        <a href="" >このコースを受ける</a>
+                    </div>
+
+            </div>
+
+            <div class="course-intro">
+                <img src="images/unity.png" alt="">
+                <p>Unityコース</p>
+                <div class="unity">
+                    <a href="" >このコースを受ける</a>
+                </div>
+            </div>
+
+            <div class="course-intro">
+                <img src="images/ruby.png" alt="">
+                <p>Rubyコース</p>
+                <div class="ruby">
+                    <a href="" >このコースを受ける</a>
+                </div>
+            </div>
+
+            <div class="course-intro">
+                <img src="images/js.png" alt="">
+                <p>JavaScriptコース</p>
+                <div class="js">
+                    <a href="" >このコースを受ける</a>
+                </div>
+            </div>
+
+            <div class="course-intro">
+                <img src="images/swift.png" alt="">
+                <p>Swiftコース</p>
+                <div class="swift">
+                    <a href="" >このコースを受ける</a>
+                </div>
+            </div>
+
+            <div class="course-intro">
+                <img src="images/go.png" alt="">
+                <p>Goコース</p>
+                <div class="go">
+                    <a href="" >このコースを受ける</a>
+                </div>
+            </div>
+
+           
+
+
+        </div>
+    </section>
+    
+    <section class="images" id="images">
+        <h2>Images</h2>
+        <div class="slider">
+            <div class="slider_item">
+                <img src="images/background1.jpg" alt="" width="300" height="200">
+            </div>
+            <div class="slider_item">
+                <img src="images/background2.jpg" alt="" width="300" height="200">
+            </div>
+            <div class="slider_item">
+                <img src="images/background3.jpg" alt="" width="300" height="200">
+            </div>
+            <div class="slider_item">
+                <img src="images/background4.jpg" alt="" width="300" height="200">
+            </div>
+            <div class="slider_item">
+                <img src="images/background5.jpg" alt="" width="300" height="200">
+            </div>
+        </div>
+       
+        <script>
+
+         $(document).on('ready', function() {
+                 $(".regular_2").slick({
+                 dots: true, // ドットインジケーターの表示
+                infinite: true, // スライドのループを有効にするか
+                slidesToShow: 3, // 表示するスライド数を設定
+                slidesToScroll: 1 // スクロールするスライド数を設定 
+            });
+            });
+        </script>
+
+    
+          
+
+
+    </section>
+
+    <section class="access" id="access">
+        <h2>Access</h2>
+    
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.6262797845075!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1645864495080!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+            </div>
+
+           </section>
+
+    <footer>
+        ©︎ 2019 Happy Hock Inc.
+    </footer>
+
+  
+    <script src="jQuery/jquery.bxslider.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+
+</body>
+</html>
