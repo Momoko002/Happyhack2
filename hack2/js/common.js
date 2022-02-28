@@ -2,3 +2,4 @@ $(function(){
     $('.slider').slick();
     
   });
+

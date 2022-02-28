@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="jQuery/jquery.bxslider.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <div id="particles-js"></div>
-     <title>Document</title>
+     <title>Happy Hack</title>
 </head>
 
 <header>
@@ -26,18 +28,20 @@
 <body>
     <section class="firstview" >
         <div class="title">
-            <h1>Happy Hack</h1>
+           <img src="images/logo.png" alt="">
             <p>We are Web Designers.</p>
         </div>
 
+        <script src="js/jquery.bgswitcher.js"></script>
         <script>
+
             jQuery(function($) {
                 $('.firstview').bgSwitcher({
-                    images: ['images/backfround1.jpg','imges/background2.jpg','imges/background3.jpg'],
+                    images: ['images/background1.jpg','images/background2.jpg','images/background3.jpg'],
                     interval: 5000,
                     loop: true,
                     shuffle: true,
-                    effect: "drop",
+                    effect: "fade",
                     duration: 2000,
                     easing: "swing"
                 });
@@ -158,27 +162,33 @@
         <h2>Images</h2>
         <div class="slider">
             <div class="slider_item">
-                <img src="images/background1.jpg" alt="">
+                <img src="images/background1.jpg" alt="" width="300" height="200">
             </div>
             <div class="slider_item">
-                <img src="images/background2.jpg" alt="">
+                <img src="images/background2.jpg" alt="" width="300" height="200">
             </div>
             <div class="slider_item">
-                <img src="images/background3.jpg" alt="">
+                <img src="images/background3.jpg" alt="" width="300" height="200">
             </div>
             <div class="slider_item">
-                <img src="images/background4.jpg" alt="">
+                <img src="images/background4.jpg" alt="" width="300" height="200">
             </div>
             <div class="slider_item">
-                <img src="images/background5.jpg" alt="">
+                <img src="images/background5.jpg" alt="" width="300" height="200">
             </div>
         </div>
+       
         <script>
-            $(function(){
-              $('.slider').slick();
-              
+
+         $(document).on('ready', function() {
+                 $(".regular_2").slick({
+                 dots: true, // ドットインジケーターの表示
+                infinite: true, // スライドのループを有効にするか
+                slidesToShow: 3, // 表示するスライド数を設定
+                slidesToScroll: 1 // スクロールするスライド数を設定 
             });
-            </script>
+            });
+        </script>
 
     
           
@@ -188,22 +198,22 @@
 
     <section class="access" id="access">
         <h2>Access</h2>
-        <div class="accessmap">
+    
             <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6560.6262797845075!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1645864495080!5m2!1sja!2sjp" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
             </div>
-        </div>
+
            </section>
 
     <footer>
         ©︎ 2019 Happy Hock Inc.
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
     <script src="jQuery/jquery.bxslider.min.js"></script>
-    <script src="js/jquery.bgswitcher.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
 

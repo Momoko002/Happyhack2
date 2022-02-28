@@ -43,11 +43,10 @@ header ul :hover{
     overflow: hidden;
 }
 
-.firstview h1{
-    font-size: 100px;
-    padding-top: 125px;
-    color: #ffbf00;
-    text-align: center;
+.firstview img{
+    width: 900px;
+    height: 240px;
+    margin-top: 40px;
 }
 
 .firstview p{
@@ -145,6 +144,13 @@ header ul :hover{
     background-color: #d6e5f9;
     width: 100vw;
     padding: 60px;
+    position: relative;
+}
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 
@@ -289,10 +295,11 @@ header ul :hover{
     font-weight: bold;
 }
 
-.slider img{
-   width: 290px;
-   height: 190px;
+.slider{
+    display: flex;
+    flex-direction: row;
 }
+
 .bx-wrapper{
     width: 1152px;
     height: 193px;
@@ -306,9 +313,13 @@ header ul :hover{
     font-weight: bold;
 }
 
-.accessmap{
+.access{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
 
 footer{
     height: 90px;
