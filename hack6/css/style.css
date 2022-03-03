@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style: none;
+}
+
+@media screen and (max-width: 1000px) {/* スクリーンサイズが1000px以下の場合に適用 */} 
+ 
+@media screen and (max-width: 767px) {/* スクリーンサイズが767px以下の場合に適用 */} 
+ 
+@media screen and (max-width: 480px) {/* スクリーンサイズが480px以下の場合に適用 */} 
+ 
+@media screen and (max-width: 320px) {/* スクリーンサイズが320px以下の場合に適用 */} 
+ 
+@media screen and (min-width: 768px) {/* スクリーンサイズが768px以上の場合に適用 */} 
+
+header{
+    height: 0;
+    line-height: 35px;
+    justify-content: space-between;
+    padding-left: 875px;
+}
+
+
+header ul{
+    display: flex;
+    width: 500px;
+    font-size: 25px;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+header a{
+    color: #fff;
+    font-family: 'Futura';
+}
+
+header ul :hover{
+    color:#3e5ddb;
+    transition : 0.5s;
+}
+
+.firstview{
+    height: 100vh;
+    width: 100vw;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.firstview img{
+    width: 900px;
+    height: 240px;
+    margin-top: 40px;
+}
+
+.firstview p{
+    font-size: 44px;
+    color:#fff;
+    padding: 50px;;
+    text-align: center;
+    font-family:'Futura';
+}
+
+.intro{
+    padding: 50px;
+    
+}
+
+.intro h2{
+    font-size: 50px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #3e5ddb;
+    font-weight: bold;
+    font-family: 'Futura';
+}
+
+.intro1{
+    margin-top: 75px;
+}
+
+.intro-one{
+    margin: 20px;
+}
+
+.intro-one p{
+   line-height: 200%; 
+   letter-spacing: 0.009em;
+   margin-bottom: 40px;
+}
+.intro-one a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3e5ddb;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    margin-left: 125px;
+}
+
+.intro1 img{
+    width: 500px;
+    height: 335px;
+    margin-right: 75px;
+}
+
+.intro1{
+    display: flex;
+    justify-content: center;
+}
+
+.intro2{
+    margin-top: 95px;
+}
+
+.intro-two p{
+    line-height: 200%; 
+    letter-spacing: 0.009em; 
+    margin-bottom: 40px;
+}
+
+.intro2 img{
+    width: 500px;
+    height: 335px;
+    margin-left: 100px;
+}
+
+.intro-two a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ffbf00;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    margin-left: 125px;
+}
+
+.intro2{
+    display: flex;
+    justify-content: center;
+}
+
+.courses{
+    background-color: #d6e5f9;
+    width: 100vw;
+    padding: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+.courses h2{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #3e5ddb;
+    margin-bottom: 75px;
+    font-family: 'Futura';
+}
+
+
+.course-intro{
+    height: 340px;
+    width: 245px;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 55px;
+    border-radius: 16px;
+    margin: 20px;
+    /*box-shadow: 2px 2px 7px;*/
+}
+.courses-intro{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center; 
+}
+
+.course-intro p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.html img{
+    margin-bottom: 30px;
+}
+
+.html a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #e44d27;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 28px;
+}
+
+.css img{
+    margin-bottom: 19px;
+}
+
+.css p{
+    margin-bottom: 10px;
+}
+
+.css a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #28A9DF;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 20px;
+}
+
+.unity a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #333333;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 32px;
+}
+
+.unity img{
+    margin-bottom: 45px;
+}
+
+.ruby a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #FF5252;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 32px;
+}
+.ruby img{
+    margin-bottom: 45px;
+}
+ 
+.js a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #FED602;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 30px;
+}
+
+.js img{
+    margin-bottom: 11px;
+}
+
+.swift a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #fe7535;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 33px;
+}
+
+.swift img{
+    margin-bottom: 30px;
+}
+
+.go a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #72cedd;
+    line-height: 40px;
+    width: 170px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 16px;
+    padding:0,28;
+    margin-top: 28px;
+}
+
+
+.images h2{
+    font-size: 50px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #3e5ddb;
+    font-weight: bold;
+    font-family: 'Futura';
+    margin-bottom: 20px;
+}
+
+.slider{
+    width: 1150px;
+    margin: 0 auto;
+}
+
+
+
+.access h2{
+    font-size: 50px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #3e5ddb;
+    font-weight: bold;
+    font-family: 'Futura';
+}
+
+.access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    height: 90px;
+    line-height: 90px;
+    background-color: #fff;
+    text-align: center;
+    color: #3e5ddb;
+    font-weight: bold;
+}
+
+
