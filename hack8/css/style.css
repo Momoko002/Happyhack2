@@ -88,7 +88,7 @@ header ul :hover{
 
 
 .intro-one{
-    margin: 20px;
+    margin: 30px;
 }
 
 .intro-one p{
@@ -97,13 +97,14 @@ header ul :hover{
    margin-bottom: 40px;
 }
 .intro-one a{
+    display: block;
+    margin: 30px auto;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
     background-color: #3e5ddb;
     line-height: 40px;
-    width: 170px;
-    display: inline-block;
+    width: 170px; 
     text-align: center;
     border-radius: 16px;
 }
@@ -132,18 +133,17 @@ header ul :hover{
 
 }
 
-.intro2 img{
-    width: 500px;
-}
 
 .intro-two a{
+    display: block;
+    margin: 30px auto;
     font-size: 20px;
     font-weight: bold;
     color: #fff;
     background-color: #ffbf00;
     line-height: 40px;
     width: 170px;
-    display: inline-block;
+
     text-align: center;
     border-radius: 16px;
 
@@ -154,7 +154,14 @@ header ul :hover{
     justify-content: center;
 }
 
+.intro-two{
+    margin: 40px;
+}
 
+.intro2 img{
+    width: 500px;
+    height: 350px;
+}
 
 
 
